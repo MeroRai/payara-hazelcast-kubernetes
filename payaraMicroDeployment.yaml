@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: payara-micro
-        image: merorai/payara-micro-kubernetes
+        image: merorai/payara-hazelcast-kubernetes
         imagePullPolicy: Always
         ports:
         - name: payara-micro
