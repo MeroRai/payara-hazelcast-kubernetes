@@ -20,7 +20,7 @@
 
           <properties>
             <!-- configure discovery service API lookup -->
-            <property name="service-name">payara/property>
+            <property name="service-name">payara</property>
              <property name="service-label-name">name</property>
               <property name="service-label-value">payara</property>
             <property name="namespace">default</property>
