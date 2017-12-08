@@ -7,8 +7,9 @@ metadata:
 spec:
   type: NodePort
   ports:
-    # the port that this service should serve on
+    # The port that this service should serve on
   - port: 8080
+    # the port where application will be exposed on
     nodePort: 30001
   selector:
     name: payara
