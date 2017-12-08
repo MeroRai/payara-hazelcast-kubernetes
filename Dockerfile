@@ -42,4 +42,4 @@ EXPOSE 4848 8009 8080 8181
 USER payara
 WORKDIR $PAYARA_PATH
 
-ENTRYPOINT ["java", "-jar", "payara-micro.jar","--hzconfigfile", "hazelcast.xml", "--deploy", "rest-jcache.war", "--port", "8080", "--autobindhttp", "--addjars", "/lib/", "--name", "payara-micro"]
+ENTRYPOINT ["java", "-jar", "payara-micro.jar","--hzconfigfile", "hazelcast.xml", "--deploy", "rest-jcache.war", "--autobindhttp", "--addjars", "/lib/", "--name", "payara-micro"]
