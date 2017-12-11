@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: payara-micro2
+  labels:
+    name: payara
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: payara
+    spec:
+      containers:
+      - name: payara-micro2
+        image: merorai/payara-hazelcast-kubernetes
+        imagePullPolicy: Always
+        ports:
+        - name: payara-micro
+          containerPort: 8081

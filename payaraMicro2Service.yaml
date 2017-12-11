@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: payara-micro2
+  labels:
+    name: payara
+spec:
+  type: NodePort
+  ports:
+    # The port that this service should serve on
+  - port: 8081
+    # the port where application will be exposed on
+    nodePort: 30002
+  selector:
+    name: payara
